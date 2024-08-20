@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zodiac Signs</title>
+  </head>
+  <script>
+  function display(element){
+    document.getElementById('image').innerHTML = element.alt;
+  }
+  function revert(){
+    document.getElementById('image').innerHTML = "Hover over a zodiac sign to view their personality traits!";
+  }
+ </script>
+  <style>
+  body{
+    background-image: url("nblue.jpg");
+  }   
+
+  #image{
+      width: 1000px;
+      height: 75px;
+      border:5px solid aqua;
+      border-style: groove;
+      background-color: black;
+      background-repeat: no-repeat;
+      color:aqua;
+      background-size: 100%;
+      font-family: Agency FB, Calibri;
+      font-size: 150%;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  img{
+  width: 200px;
+  height: 200px;
+  border: 3px solid aqua;
+  border-radius: 50%;
+  margin-left: 75px;
+  margin-bottom: 50px;
+  margin-right: 75px;
+  align-self: center;
+  }
+  </style>
+  <body>
+    <div>
+    <center><p id = "image">Hover over a zodiac sign to view their personality traits!</p></center>
+    <img alt = "Sagittarius are beautiful, loyal and passionate." src = "saggi.jfif" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Pisces are dreamy, helpful and love everyone!" src = "pisces.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Leo are strong and fearless. They aim for and achieve a lot!" src = "leo.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Scorpions are friends for life. They are trustworthy and truthful." src = "scorpion.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Aries loves to be number one. They are bold and ambitious." src = "aries.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "Taureans enjoy relaxing in serene, bucolic environments surrounded by soft sounds, soothing aromas, and succulent flavors." src = "taurus.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt="Capricorns are skilled at navigating both the material and emotional realms." src="capricorn.jpg" onmouseover="display(this)" onmouseout="revert()">
+    <img alt = "Cancers are highly intuitive and their psychic abilities manifest in tangible spaces." src = "cancer.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+</div>
+  </body>
+</html>
